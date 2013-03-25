@@ -85,3 +85,8 @@ map <leader>nf :NERDTreeFind<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 vmap Si S(i_<esc>f)
 au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
+
+"""""""""""""""""""""""""""""""""
+" => Rename
+"""""""""""""""""""""""""""""""""
+map <leader>rr :Rename <c-r>=expand("%:p:h")<cr>/
