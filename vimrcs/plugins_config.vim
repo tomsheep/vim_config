@@ -77,6 +77,7 @@ set grepprg=/bin/grep\ -nH
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark 
 map <leader>nf :NERDTreeFind<cr>
+let NERDTreeIgnore = ['\.pyc$']
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -90,3 +91,12 @@ au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
 " => Rename
 """""""""""""""""""""""""""""""""
 map <leader>rr :Rename <c-r>=expand("%:p:h")<cr>/
+
+
+"""""""""""""""""""""""""""""""""
+" => ctags
+"""""""""""""""""""""""""""""""""
+"autocmd BufWritePost * call system("ctags -R")
+
+map <f5> :!ctags -R -o .tags<CR>
+set tags+=.tags

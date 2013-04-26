@@ -1,3 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/tomsheep/.vim_runtime'
+let g:netrw_dirhist_2='/home/tomsheep/workspace/mine/douban-client/douban_client'
+let g:netrw_dirhist_3='/home/tomsheep'
+let g:netrw_dirhist_4='/home/tomsheep/Desktop'
