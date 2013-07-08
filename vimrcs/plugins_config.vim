@@ -100,3 +100,12 @@ map <leader>rr :Rename <c-r>=expand("%:p:h")<cr>/
 
 map <f5> :!ctags -R -o .tags<CR>
 set tags+=.tags
+
+"""""""""""""""""""""""""""""""""
+" => authorinfo
+"""""""""""""""""""""""""""""""""
+let g:vimrc_author='tomsheep' 
+let g:vimrc_email='tomsheep.cn@gmail.com' 
+let g:vimrc_homepage='http://blog.tomsheep.net/about' 
+
+nmap <F4> :AuthorInfoDetect<cr> 
