@@ -52,3 +52,10 @@ function! CoffeeScriptFold()
     setl foldlevelstart=1
 endfunction
 au FileType coffee call CoffeeScriptFold()
+
+""""""""""""""""""""""""""""""
+" => Org section
+"""""""""""""""""""""""""""""""
+au! BufRead,BufWrite,BufWritePost,BufNewFile *.org 
+au BufEnter *.org            call org#SetOrgFileType()
+

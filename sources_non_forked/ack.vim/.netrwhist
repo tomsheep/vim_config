@@ -1,10 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/home/tomsheep/.vim_runtime'
-let g:netrw_dirhist_2='/home/tomsheep/workspace/mine/douban-client/douban_client'
-let g:netrw_dirhist_3='/home/tomsheep'
-let g:netrw_dirhist_4='/home/tomsheep/Desktop'
-let g:netrw_dirhist_5='/home/tomsheep/tmp'
-let g:netrw_dirhist_6='/home/tomsheep/workspace/douban/libfm-1.34.src/src/libfm/src'
-let g:netrw_dirhist_7='/Users/tomsheep/workspace/reddit'
-let g:netrw_dirhist_8='/Users/tomsheep/workspace/smelly/static'
+let g:netrw_dirhist_cnt =0
