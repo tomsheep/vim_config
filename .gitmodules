@@ -1,0 +1,4 @@
+[submodule "sources_non_forked/jedi-vim"]
+	path = sources_non_forked/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
+	branch = master
