@@ -2,3 +2,6 @@
 	path = sources_non_forked/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
 	branch = master
+[submodule "sources_non_forked/vim-scala"]
+	path = sources_non_forked/vim-scala
+	url = https://github.com/derekwyatt/vim-scala.git
