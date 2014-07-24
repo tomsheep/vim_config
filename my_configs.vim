@@ -15,3 +15,6 @@ let g:jedi#show_call_signatures = "1"
 
 au FileType python set formatprg=/home/work/.vim_runtime/sources_forked/vim-PythonTidy/PythonTidy.py
 noremap <F11> gggqG
+
+let g:syntastic_python_checkers=['flake8']
+let g:syntastic_python_checker_args='--ignore=E501,W391'
