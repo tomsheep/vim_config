@@ -17,5 +17,7 @@ au FileType python set formatprg=/home/work/.vim_runtime/sources_forked/vim-Pyth
 noremap <F11> gggqG
 
 let g:syntastic_python_checkers=['flake8']
-" let g:syntastic_python_checker_args='--ignore=E501,W391'
 let g:syntastic_python_flake8_args = '--ignore=E501,W391,E123'
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+

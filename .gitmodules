@@ -5,3 +5,9 @@
 [submodule "sources_non_forked/vim-scala"]
 	path = sources_non_forked/vim-scala
 	url = https://github.com/derekwyatt/vim-scala.git
+[submodule "sources_non_forked/vundle"]
+	path = sources_non_forked/vundle
+	url = https://github.com/gmarik/vundle.git
+[submodule "sources_non_forked/YouCompleteMe"]
+	path = sources_non_forked/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe
