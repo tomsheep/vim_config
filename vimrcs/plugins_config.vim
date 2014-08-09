@@ -8,8 +8,8 @@
 """"""""""""""""""""""""""""""
 " => Load pathogen paths
 """"""""""""""""""""""""""""""
-call pathogen#infect('~/.vim_runtime/sources_forked')
-call pathogen#infect('~/.vim_runtime/sources_non_forked')
+call pathogen#infect('~/.vim_runtime/sources_forked/{}')
+call pathogen#infect('~/.vim_runtime/sources_non_forked/{}')
 call pathogen#helptags()
 
 """"""""""""""""""""""""""""""
@@ -45,17 +45,11 @@ endif
 let g:ctrlp_working_path_mode = 0
 
 let g:ctrlp_map = '<c-f>'
+map <leader>j :CtrlP<cr>
 map <c-b> :CtrlPBuffer<cr>
 
 let g:ctrlp_max_height = 20
 let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
-
-
-""""""""""""""""""""""""""""""
-" => Peepopen
-""""""""""""""""""""""""""""""
-map <leader>j :PeepOpen<cr>
-
 
 
 """"""""""""""""""""""""""""""
@@ -101,25 +95,22 @@ let g:multi_cursor_next_key="\<C-s>"
 vmap Si S(i_<esc>f)
 au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
 
-"""""""""""""""""""""""""""""""""
-" => Rename
-"""""""""""""""""""""""""""""""""
-map <leader>rr :Rename <c-r>=expand("%:p:h")<cr>/
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-airline config (force color)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:airline_theme="luna"
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Vimroom
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:goyo_width=100
+let g:goyo_margin_top = 2
+let g:goyo_margin_bottom = 2
+nnoremap <silent> <leader>z :Goyo<cr>
 
 
-"""""""""""""""""""""""""""""""""
-" => ctags
-"""""""""""""""""""""""""""""""""
-"autocmd BufWritePost * call system("ctags -R")
-
-map <f5> :!ctags -R -o .tags<CR>
-set tags+=.tags
-
-"""""""""""""""""""""""""""""""""
-" => authorinfo
-"""""""""""""""""""""""""""""""""
-let g:vimrc_author='tomsheep' 
-let g:vimrc_email='tomsheep.cn@gmail.com' 
-let g:vimrc_homepage='http://blog.tomsheep.net/about' 
-
-nmap <F4> :AuthorInfoDetect<cr> 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Syntastic (syntax checker)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:syntastic_python_checkers=['flake8']
