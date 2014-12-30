@@ -1,6 +1,7 @@
 set tags+=~/.vim/systags
 let $VIMHOME=expand('<sfile>:p:h')
 
+set nofoldenable    " disable folding
 let mapleader = ','
 " let g:jedi#auto_initialization = "1"
 " let g:jedi#auto_vim_configuration = "1"
@@ -54,3 +55,7 @@ let g:ycm_complete_in_strings = 1
 let g:ycm_collect_identifiers_from_comments_and_strings = 0
 let g:ycm_filepath_completion_use_working_dir = 1
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+let g:ycm_server_keep_logfiles = 1
+let g:ycm_server_log_level = 'debug'
+let g:ycm_path_to_python_interpreter = '/Users/tomsheep/.pyenv/shims/python'
+
