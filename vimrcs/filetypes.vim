@@ -47,15 +47,10 @@ au FileType python map <buffer> <leader>D ?def
 """"""""""""""""""""""""""""""
 " => CoffeeScript section
 """""""""""""""""""""""""""""""
-" function! CoffeeScriptFold()
-"     setl foldmethod=indent
-"     setl foldlevelstart=1
-" endfunction
-" au FileType coffee call CoffeeScriptFold()
+function! CoffeeScriptFold()
+    setl foldmethod=indent
+    setl foldlevelstart=1
+endfunction
+au FileType coffee call CoffeeScriptFold()
 
-""""""""""""""""""""""""""""""
-" => Org section
-"""""""""""""""""""""""""""""""
-au! BufRead,BufWrite,BufWritePost,BufNewFile *.org 
-au BufEnter *.org            call org#SetOrgFileType()
-
+au FileType gitcommit call setpos('.', [0, 1, 1, 0])
