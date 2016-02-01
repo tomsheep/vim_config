@@ -57,11 +57,14 @@ let g:ycm_filepath_completion_use_working_dir = 1
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let g:ycm_server_keep_logfiles = 1
 let g:ycm_server_log_level = 'debug'
-let g:ycm_path_to_python_interpreter = '/Users/tomsheep/.pyenv/shims/python'
+let g:ycm_path_to_python_interpreter = '/usr/local/bin/python'
+
+let g:jsx_ext_required = 0
 
 set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 set termencoding=utf-8
 set encoding=utf-8
+set mouse-=a
 
 let g:syntastic_mode_map = { "mode": "active",
                            \ "active_filetypes": [],
